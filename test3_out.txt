@@ -1,0 +1,9 @@
+line 10: (string) cannot be represented by the (float32)
+line 11: No new variables on the left side of :=
+line 12: No new variables on the left side of :=
+line 13: ’c’ redeclared in this block
+line 15: (bool) cannot be represented by the (int)
+line 16: (float32) cannot be represented by the (int)
+line 17: (float32) cannot be represented by the (int)
+line 19: (bool) cannot be represented by the (int)
+line 20: (int) cannot be represented by the (float32)

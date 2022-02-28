@@ -1,0 +1,3 @@
+line 8: ’first’ redeclared in this file
+line 9: Too many arguments to return
+line 15: (int) cannot be represented by the (string)

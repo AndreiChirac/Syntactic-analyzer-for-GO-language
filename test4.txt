@@ -1,0 +1,20 @@
+func first(a int, b int) int {
+    var c float32
+    c = a + b
+    return c
+}
+
+func first() bool {
+    x := true
+    return x
+}
+
+func first() bool {
+    x := "true"
+    return x
+}
+
+func first() {
+    x := "true"
+    return x
+}

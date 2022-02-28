@@ -1,0 +1,20 @@
+// Ana are, mere
+/*
+Ana are mere
+si pere
+*/
+var a float32
+var c int
+b := 7
+l := 2.1
+a = "ana"
+b := 8
+c := 7
+var c string
+var x, y, z := 1, 2.5, false
+x = true
+x = 2.3
+x = y
+q, w, e := 1, 2.5, false
+q = true
+w = 1

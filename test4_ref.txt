@@ -1,0 +1,9 @@
+line 4: Invalid return type for function ’first’
+line 7: ’first’ redeclared in this file
+line 12: ’first’ redeclared in this file
+line 12: ’first’ redeclared in this file
+line 14: Invalid return type for function ’first’
+line 17: ’first’ redeclared in this file
+line 17: ’first’ redeclared in this file
+line 17: ’first’ redeclared in this file
+line 19: Too many arguments to return

@@ -1,0 +1,75 @@
+Chirac Andrei 335CC
+
+In cadrul acestei teme am avut in vdere urmatoarele lucruri caracterizate de
+limajul GO pentru a putea fi analizat :
+    
+    * Comentarii
+        - In cadrul acestei topici stim ca un comentariu poate incepe in 2
+    moduri fie prin :
+            # // si comentariul va tine pana la final de linie prin urmare vom
+        tine cont de aprita simbolului "//" si acesta se va termina odata cu 
+        apritia "\n" astfel ce este intre cele doua simboluri cheie nu va fi
+        luat in considerare.
+            # /* si comentariul va tine pana la aparitia simbolului */ astfel
+        ce este intre cele doua simboluri cheie nu se va interpreta.
+
+    * Variabile
+        - In ceea ce priveste variabilele stim ca exista 2 metode de a fi 
+    declarate :
+            # prin specificarea cuvantului cheie "var" astfel in momentul in
+        care se detecteaza cuvantul specificat stim sigur ca ce va urma este
+        o declarare a unor variabile deci vom trece intr o stare in care luam 
+        in calcul declararea unei variabile. Mai intai stim ca vom avea numele
+        acesteia deci in cadrul starii curente vom constui o regula care se
+        ocupa de detectarea cuvintelor, ulterior putem avea tipul variabilei
+        (in acest sens vom avea o stare specifica pentru numere întregi [int],
+        pentru numere reale [float32], pentru s, iruri de caractere [string],
+        pentru valori binare [bool]) sau putem avea "=" care semnaleaza
+        trecerea intr-o noua stare si anume cea de initializare, in cazul in
+        care nu s-a specificat tipul variabilei ce este dupa "=" va determina
+        tipul acesteia.
+            # prin specificarea simbolului cheie ":=" astfel in momentul in
+        care se detecteaza cuvantul specificat stim sigur ca ce va urma este
+        o declarare si intializarea acesteia a unor variabile deci
+        comportamentul va fi unul similar cu cel prezentat mai sus.
+        
+        - In cazul variabilelor pot aparea erori deoarece putem avea deja
+    o variabila declarata si sa se incerece redeclararea ei deci vom tine
+    cont de acest lucru prin adaugarea variabilelor intr-un array in care
+    vom tine minte numele acestora, iar intr-un alt array tipul acesteia
+    astfel vom sti cum sa actionam in cazul reaparitiei acestora.
+
+    * Tipuri
+        - In ceea ce priveste tipurile stim ca exista 4 tipuri in limbajul
+    GO : 
+            # tipul int – pentru numere întreg
+            # tipul float32 – pentru numere reale
+            # tipul string – pentru s, iruri de caractere
+            # tipul bool – pentru valori binare (true sau false)
+
+        - Stim ca avem stocate tipurile varibilelor deci in momentul in care
+    se realizeaza atribuirea valorii vom stii exact daca atribuirea este una
+    corecta sau nu in cazul in care se realizeaza acesta se va semnala acest
+    lucru cu un mesaj de eroare.
+
+    * Functii
+        - In ceea ce priveste functiile stim ca exista un singur mod de
+    distingere a unei functii in limbajul GO : 
+            # cuvantul cheie func semnaleaza inceperea declararii unei
+        functii, in acest limbaj putem vedea un model deci in urma aparitiei
+        cuvantului "func" vom trece intr-o stare care va urmari cuvinte acest
+        lucru va determina numele functiei, tipurile de variabile brezentate
+        anterior care va semnala tipul de retur pe care il are functi noastra.
+        La fel ca in cazul variabilelor putem avea redeclararea unor functii
+        deci vom proceda similar, vom tine intr-un array numele functiilor si
+        intr-un alt array tipul de retur. Stim ca in cazul in care apare "("
+        va incepe declararea parametilor functiei astfel vom trece intr-o noua
+        stare si acestia vor fi stocati ca in cazul unor variabile normale.
+        Vom iesi din aceasta stare si vom reveni in starea precedenta odata
+        cu aparitia ")". In cazul in care se detecteaza "{" vom intra in starea
+        initiala care respecta comportamentul descris anterior la cele 3
+        puncte. In cazul detecarii cuvantului "return" se va intra intr-o stare
+        specifica acestui cuvant cheie in care se va verifica daca functia 
+        returneaza sau nu, iar in cazul in care aceasta returneaza ceva ne vom
+        asigura ca tipul este corect in caz contrar se vor afisa mesaje de 
+        eroare.
